@@ -1,0 +1,15 @@
+/Users/rpolkinghorne/Desktop/litdex/jcp-136-014109:ti: Linear dependence and energy conservation in Gaussian wavepacket basis sets
+/Users/rpolkinghorne/Desktop/litdex/jcp-136-014109:This uses an approach where the amplitudes evolve independently, and only the weights are variational.  At each timestep, the evolved wavefunction is expanded over the gaussians, starting with the one with largest overlap, and proceeding recursively.  This ensures that only one of a set of parallel basis kets will be included in the expansion.
+/Users/rpolkinghorne/Desktop/litdex/jcp-83-3009:Main result: in circumstances where the local harmonic approximation is exact, gaussian approximants evolve independently, even in variational dynamics.
+/Users/rpolkinghorne/Desktop/litdex/jcp-84-227:ti: A multiple trajectory theory for curve crossing problems obtained by using a Gaussian wave packet representation of the nuclear motion
+/Users/rpolkinghorne/Desktop/litdex/jcp-84-6293:ti: A Gaussian wave packet method for studying time dependent quantum mechanics in a curve crossing system: Low energy motion, tunneling, and thermal dissipation
+/Users/rpolkinghorne/Desktop/litdex/jcp-85-4129:ti: A multiple Gaussian wave packet theory of H₂ diffraction and rotational excitation by collision with solid surfaces
+/Users/rpolkinghorne/Desktop/litdex/jcp-87-5302:ti: Generalised Gaussian wave packet dynamics
+/Users/rpolkinghorne/Desktop/litdex/jcp-87-5302:this describes a trick.  the quadratic exponent of a Gaussian is split into a complex position and momentum, then the wavepacket is propagated along the classical trajectory starting with their real parts.  this is supposed to give the propagator between squeezed states that aren't connected by a classical trajectory.
+/Users/rpolkinghorne/Desktop/litdex/jcp-87-5302:p5302 independent Gaussian methods lose unitarity
+/Users/rpolkinghorne/Desktop/litdex/jcp-87-5987:ti: Optimisation of a distributed Gaussian basis set using simulated annealing: Application to the solvated electron
+/Users/rpolkinghorne/Desktop/litdex/jcp-90-3060:ti: The time propagation of the stationary states of a Morse oscillator by the Gaussian wave packet method
+/Users/rpolkinghorne/Desktop/litdex/jcp-90-3060:Uses the minimum number of Gaussians possible.
+/Users/rpolkinghorne/Desktop/litdex/jcp-93-3919:ti: Multidimensional variational Gaussian wave packet dynamics with application to photodissociation spectroscopy
+/Users/rpolkinghorne/Desktop/litdex/jpa-19-2559:ti: The exact eigenfunctions and eigenvalues of a particle in a box obtained using Gaussian wavepacket dynamics
+/Users/rpolkinghorne/Desktop/litdex/prb-73-125112:ti: Gaussian phase-space representations for fermionsp https://doi.org/10.1016/S0009-2614(02)01920-6

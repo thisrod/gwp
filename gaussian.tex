@@ -1,0 +1,68 @@
+\input respnotes
+
+\def\H{{\bf H}}
+
+\title A review of variational Gaussian wave packets
+
+This will summarise the work that has been done from the time of Heller to the present day.  It will take the viewpoint of frames and stability.
+
+Notation.  A superposition of~$r$ multimode wave packets, each with~$n$ modes, is~$r×n$.  (The~$×n$ can be omitted for a single mode.)  MCTDH matrices use~$⊗$, so a full tensor product of wave packets over 3 modes might be~$2⊗2⊗2$, or~$2³$.  (Evaluating these as integer expressions gives you a count of the parameters.)  A Hilbert space for a single degree of freedom, expanded over~$r$ basis states that are not gaussian wave packets, is written~$r×\H$.  So the normal MCTDH has structure~$(n₁×\H)⊗…⊗(n_f×\H)$.  An arbitrary expansion is~$\H$, so~$\Hⁿ$ is a general state with~$n$ degrees of freedom.
+
+\section Dirac and Frenkel
+
+Dirac-Frenkel dynamics necessarily conserves the norm of the ket and~$〈H〉$.  Dirac-Frenkel variational coefficients conserve the norm, whatever the amplitudes are forced to do \cite{jcp-136-014109}.
+
+\section Heller
+
+\section MCTDH
+
+MCTDH is \dots
+
+The “stays orthogonal” constraint can be expressed as the single-particle modes in each subspace obey some Hamiltonian dynamics.
+
+Follow up cpl-368-502[1:7 10 11 12 13:15 21], jcp-111-2927[12]
+
+The original idea \cite{jcp-111-2927} was to treat the system with normal MCTDH, and the bath with a multimode gaussian wave packet, with structure~$(n₁×\H)⊗…⊗(n_{f-1}×\H)⊗(n_f×m)$.  Motivated by molecules in solution.  Assume the solvents have a small range of motion, so that their potential is nearly harmonic.  This paper derived the variational equations for a density matrix and master equation.
+
+Worth and Burghardt \cite{cpl-368-502} combined variational wave packets with MCTDH.  The idea was simply to use Gaussian wave packets as the orbitals~$φⁿ_i$ in that method.  (Note that this arranges the tensor products differently than in the multimode coherent state version.)  The hope was to use multidimensional wave packets, with each set of parameters covering several degrees of freedom.  This was applied to a Henon-Heiles potential, and reproduced a numerically exact autocorrelation function.  It's unclear why this was numerically stable.
+
+This used structures~$(5×2)²$ to~$(25×2)²$, in a phase space of volume~?.
+{\bf Check out who cited it.}
+
+This managed to superpose 625 wavepackets in 4D space.  {\bf How did they deal with the lack of orthogonality?}  Wave packets were deleted when they escaped to large distance.
+
+Noted that tunnelling happens by lots of energy being transferred to a subset of the wave packets.
+
+Another application in \cite{jcp-119-5364}.
+
+\section Frozen trajectories
+
+\cite{jcp-132-244111}
+
+Habershon \cite{jcp-136-014109} deleted redundant wave packets to maintain full rank, used Eherenfest type trajectories.
+
+\section Regularisation
+
+Kay cph-137-165 thought about SVDs and rank-deficiency.  Follow up his refs and cites.  (This is actually a discrete problem, not a rank-deficient one 2010-Hansen-Discrete).  
+
+Habershon \cite{jcp-136-014109} propagated an ensemble of wave packets using Eherenfest type trajectories, but forced the variational coefficients of the redundant ones to zero.  He substituted packets in and out as the condition of the expansion operator changed.  This paper treated a double well potential.
+
+The initial amplitudes were sampled from the Wigner distribution for the initial state, no justification for why it wasn't Q.  For a quartic oscillator state, Wigner sampling would generate lots of wave packets that don't overlap the state.  This used a pseudoinverse that truncated small singular values.  Habershon's results diverge in a very similar way to our quartic oscillator results.  He attributes this to conservation of energy failing, but he doesn't think through the stiffness and high energy state ideas.  His stabilisation approach works.  He claims that it works because he is constantly re-expanding the state over a new set of active wave packets.  It's plausible that a parasitic solution in one expansion is well-behaved in the next expansion.
+
+{\bf Discuss section III of jcp-136-014109 in detail.}
+
+\section Index of potentials treated
+
+Henon-Helies
+double well
+
+\section To look at
+
+cpx-304-103
+jcp-132-244111
+jcp-128-054102
+jcp-136-014109[1:17]
+
+\section Rejected as irrelevant
+
+jcp-117-4738 (only one wave packet, $r=1$)
