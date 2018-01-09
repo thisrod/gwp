@@ -1,5 +1,3 @@
-/Users/rpolkinghorne/Desktop/litdex/jcp-136-014109:ti: Linear dependence and energy conservation in Gaussian wavepacket basis sets
-/Users/rpolkinghorne/Desktop/litdex/jcp-136-014109:This uses an approach where the amplitudes evolve independently, and only the weights are variational.  At each timestep, the evolved wavefunction is expanded over the gaussians, starting with the one with largest overlap, and proceeding recursively.  This ensures that only one of a set of parallel basis kets will be included in the expansion.
 /Users/rpolkinghorne/Desktop/litdex/jcp-83-3009:Main result: in circumstances where the local harmonic approximation is exact, gaussian approximants evolve independently, even in variational dynamics.
 /Users/rpolkinghorne/Desktop/litdex/jcp-84-227:ti: A multiple trajectory theory for curve crossing problems obtained by using a Gaussian wave packet representation of the nuclear motion
 /Users/rpolkinghorne/Desktop/litdex/jcp-84-6293:ti: A Gaussian wave packet method for studying time dependent quantum mechanics in a curve crossing system: Low energy motion, tunneling, and thermal dissipation

@@ -12,6 +12,32 @@ Notation.  A superposition of~$r$ multimode wave packets, each with~$n$ modes, i
 
 Dirac-Frenkel dynamics necessarily conserves the norm of the ket and~$〈H〉$.  Dirac-Frenkel variational coefficients conserve the norm, whatever the amplitudes are forced to do \cite{jcp-136-014109}.
 
+Kay explains that there are several forms of the variational principle
+\cite{cpx-137-165}.  In all cases, there is a ket~$|ψ(z)〉$ that
+sits in a complex vector space, and depends on variational
+parameters~$z$.  In principle, we always want to select~$dz$ so
+that~$|ψ(z+dz)〉=|ψ(z)〉+|dψ〉$ in a Hilbert-space least squares
+sense.  This occurs when the residual~$i\hbar|ψ'(z)〉·dz-H|ψ(z)〉·dt$
+is Hilbert-space orthogonal to the column space of~$|ψ'(z)〉$.  The
+simplest case is when~$z$ is complex, and~$|ψ〉$ is analytic in
+each parameter, and orthogonality reduces
+to
+$$〈D_iψ(z)|\left(i\hbar|ψ'(z)〉·dz-H|ψ(z)〉·dt\right)=0\eqno{\tag\eqi}$$
+for all~$i$.  This is how Frenkel did it \cite{1934-Frenkel-Wave}, and he's OK.
+
+This doesn't work when~$z$ is real, and therefore~$dz$ is real.
+Taking real and imaginary parts, there are twice as many Equations~\eqi\
+as there are unknowns.  What we should do is take real and imaginary
+parts of the residual and the~$|D_iψ(z)〉$ as expanded over some
+orthonormal basis, to get a real least squares problem where more
+equations than unknowns is business as usual.  What the twits who
+invented quantum mechanics did instead was to arbitrarily demand that
+we set the real part of Equations~\eqi\ to zero following
+the “least-action form” \cite{cpx-137-165[3]}, or their imaginary
+parts to zero following McLachlan \cite{cpx-137-165[2]}.  This has
+led to lots of point scoring and name calling regarding which is
+better.
+
 \section Heller
 
 \section MCTDH
@@ -24,7 +50,7 @@ Follow up cpl-368-502[1:7 10 11 12 13:15 21], jcp-111-2927[12]
 
 The original idea \cite{jcp-111-2927} was to treat the system with normal MCTDH, and the bath with a multimode gaussian wave packet, with structure~$(n₁×\H)⊗…⊗(n_{f-1}×\H)⊗(n_f×m)$.  Motivated by molecules in solution.  Assume the solvents have a small range of motion, so that their potential is nearly harmonic.  This paper derived the variational equations for a density matrix and master equation.
 
-Worth and Burghardt \cite{cpl-368-502} combined variational wave packets with MCTDH.  The idea was simply to use Gaussian wave packets as the orbitals~$φⁿ_i$ in that method.  (Note that this arranges the tensor products differently than in the multimode coherent state version.)  The hope was to use multidimensional wave packets, with each set of parameters covering several degrees of freedom.  This was applied to a Henon-Heiles potential, and reproduced a numerically exact autocorrelation function.  It's unclear why this was numerically stable.
+Worth and Burghardt \cite{cpl-368-502} combined variational wave packets with MCTDH.  The idea was simply to use gaussian wave packets as the orbitals~$φⁿ_i$ in that method.  (Note that this arranges the tensor products differently than in the multimode coherent state version.)  The hope was to use multidimensional wave packets, with each set of parameters covering several degrees of freedom.  This was applied to a Henon-Heiles potential, and reproduced a numerically exact autocorrelation function.  It's unclear why this was numerically stable.
 
 This used structures~$(5×2)²$ to~$(25×2)²$, in a phase space of volume~?.
 {\bf Check out who cited it.}
@@ -43,7 +69,7 @@ Habershon \cite{jcp-136-014109} deleted redundant wave packets to maintain full 
 
 \section Regularisation
 
-Kay cph-137-165 thought about SVDs and rank-deficiency.  Follow up his refs and cites.  (This is actually a discrete problem, not a rank-deficient one 2010-Hansen-Discrete).  
+Kay cph-137-165 thought about SVDs and rank-deficiency, and noted that truncating the small sws and taking a pseudoinverse helped in some cases.  He didn't directly consider gaussian wave packets.  Follow up his refs and cites.  (This is actually a discrete problem, not a rank-deficient one 2010-Hansen-Discrete).  
 
 Habershon \cite{jcp-136-014109} propagated an ensemble of wave packets using Eherenfest type trajectories, but forced the variational coefficients of the redundant ones to zero.  He substituted packets in and out as the condition of the expansion operator changed.  This paper treated a double well potential.
 
@@ -62,6 +88,8 @@ cpx-304-103
 jcp-132-244111
 jcp-128-054102
 jcp-136-014109[1:17]
+jcp-90-3060
+jcp-83-3009[1:10]
 
 \section Rejected as irrelevant
 
