@@ -6,6 +6,12 @@
 
 This will summarise the work that has been done from the time of Heller to the present day.  It will take the viewpoint of frames and stability.
 
+This literature is disjointed, e.g. there are 20 page papers with “coherent state” in the title, that never mention Roy Glauber \cite{cpx-304-103}.  Name games: Gaussian wave packets vs.\ coherent states vs.\ Gabor frames vs.\ windowed Fourier transforms.
+
+Schrödinger's equation for a phase space wave function is \cite{cpx-304-103}
+$$i\hbar{d\over dt}〈α|ψ(t)〉={1\over π}∫〈α|β〉H_n(α*,β)〈β|ψ(t)〉\,d²β.$$
+This is an integro-differential equation, not just a differential equation.
+
 Notation.  A superposition of~$r$ multimode wave packets, each with~$n$ modes, is~$r×n$.  (The~$×n$ can be omitted for a single mode.)  MCTDH matrices use~$⊗$, so a full tensor product of wave packets over 3 modes might be~$2⊗2⊗2$, or~$2³$.  (Evaluating these as integer expressions gives you a count of the parameters.)  A Hilbert space for a single degree of freedom, expanded over~$r$ basis states that are not gaussian wave packets, is written~$r×\H$.  So the normal MCTDH has structure~$(n₁×\H)⊗…⊗(n_f×\H)$.  An arbitrary expansion is~$\H$, so~$\Hⁿ$ is a general state with~$n$ degrees of freedom.
 
 \section Dirac and Frenkel
@@ -30,7 +36,7 @@ Taking real and imaginary parts, there are twice as many Equations~\eqi\
 as there are unknowns.  What we should do is take real and imaginary
 parts of the residual and the~$|D_iψ(z)〉$ as expanded over some
 orthonormal basis, to get a real least squares problem where more
-equations than unknowns is business as usual.  This sensible approach is developed by Raab \cite{jcp-83-3009}.
+equations than unknowns is business as usual.  This sensible approach is developed by Raab \cite{cpl-319-674}.
 
 What the 
 inventors of quantum mechanics did instead was to arbitrarily demand that
@@ -73,6 +79,8 @@ Another application in \cite{jcp-119-5364}.
 
 Habershon \cite{jcp-136-014109} deleted redundant wave packets to maintain full rank, used Eherenfest type trajectories.
 
+Saleshin and Chile \cite{cpx-304-103} propagated an ensemble of coherent amplitudes by treating the normally-ordered Hamiltonian as a classical Hamiltonian.
+
 \section Regularisation
 
 MCTDH was orthogonalised from the start \cite{cpl-165-73}, ostensibly to make the parameters change quickly and the expansion functions change slowly, and to simplify the mechanics.  They noted that their expansion matrix could become singular, and used Tychonov regularisation as well as truncating singular values.  They state that most work has used two degrees of freedom, and use a Henon-Heiles potential as a numerical example.
@@ -96,6 +104,8 @@ Morse oscillator
 1968-Klauder-Fundamentals
 2014-Ali-Coherent
 cpx-304-103
+jcp-83-3009
+Herman, Annu. Rev. Phys. Chem. 45, 83.
 http://pubs.acs.org/doi/pdf/10.1021/ar00072a002
 http://pubs.rsc.org/is/content/articlelanding/2007/cp/b700297a/unauth#!divAbstract
 https://doi.org/10.1080/00268970802258609
@@ -123,7 +133,6 @@ jcp-71-3383
 jcp-75-246
 jcp-75-2923
 jcp-80-3123
-jcp-83-3009
 jcp-83-3009[1:10]
 jcp-84-227
 jcp-84-3250
